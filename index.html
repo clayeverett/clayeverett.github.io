@@ -75,15 +75,41 @@
         color: #b035b2;
       }
 
+      .red {
+        color: red;
+        font-size: 2em;
+      }
+
+      /* unvisited link */
+      a:link {
+          color: #2489a5;
+      }
+
+      /* visited link */
+      a:visited {
+          color: #2489a5;
+      }
+
+      /* mouse over link */
+      a:hover {
+          color: hotpink;
+      }
+
+      /* selected link */
+      a:active {
+          color: blue;
+      }
     </style>
   </head>
   <body style="background-image: url(tiled_plasma.png)" onclick="getDressed()">
     <h1>CLAYTON MEARS</h1>
     <div id="menu">
       <em>
+        <span class='red'>ABOUT</span>
+        <br>
         Painter and student at Pratt. Select art works shown.
-        <a href="https://www.instagram.com/ccckk2566/">Instagram</a>.
         Email me at <span class="email">cmears (at) pratt (dot) edu</span>.
+        <a href="https://www.instagram.com/ccckk2566/">Instagram</a>.
       </em>
     </div>
     <div id="art-holder">
