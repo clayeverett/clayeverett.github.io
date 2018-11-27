@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title> c l a y </title>
+    <link rel="stylesheet" type="text/css" href="/magnifier.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Kumar+One+Outline|Permanent+Marker|VT323" rel="stylesheet"> -->
     <!--
       font-family: 'Permanent Marker', cursive;
@@ -10,98 +12,6 @@
       font-family: 'Black Ops One', cursive;
       font-family: 'Kumar One Outline', cursive;
     -->
-    <style>
-      h1, h2 {
-        text-align: center;
-        margin: 0.2em;
-      }
-
-      h2 {
-        font-size: 1.2em;
-      }
-
-      h1 {
-        color: black;
-        font-family: "Times New Roman", Times, serif;
-        font-size: 2.5em;
-      }
-
-      p {
-        font-size: 1em;
-      }
-
-      #menu {
-        top: 0;
-        padding: 3vw;
-        font-family: "Times New Roman", Times, serif;
-        z-index: 1000;
-        color: black;
-        font-size: 3vw;
-        width: 25vw;
-      }
-
-      .caption {
-        color: black;
-        font-family: "Times New Roman", Times, serif;
-        font-style: italic;
-        text-align: center;
-        margin-top: 1.2em;
-        margin-bottom: 0;
-        font-size: 1.2em;
-      }
-
-      #art-holder {
-        position: relative;
-        align: center;
-        /* height: 90vh; */
-        /* width: 68vw; */
-      }
-
-      .art {
-        /* width: 68vw; */
-        max-width: 80%;
-        max-height: 95vh;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .email {
-        /* color: #8a49bc; */
-        /* color: #b035b2; */
-        color: black;
-      }
-
-      .red {
-        color: red;
-        font-size: 2em;
-      }
-
-      /* unvisited link */
-      a:link {
-          color: #2489a5;
-      }
-
-      /* visited link */
-      a:visited {
-          color: #2489a5;
-      }
-
-      /* mouse over link */
-      a:hover {
-          color: hotpink;
-      }
-
-      /* selected link */
-      a:active {
-          color: blue;
-      }
-
-      body {
-        /* background-color: #eee; */
-        background-color: white;
-      }
-    </style>
   </head>
   <body>
     <h1><em>Clay</em></h1>
@@ -117,35 +27,104 @@
       </em>
     </div>
     -->
-    <div id="art-holder">
-      <p class="caption">Kiss kiss</p>
-      <img class='art' src='images/kiss-kiss-small.jpg' id='kiss-kiss'>
-      <p class="caption">Dead Horse</p>
-      <img class='art' src='images/dead-horse-small.jpg' id='dead-horse'>
-      <p class="caption">Eggs</p>
-      <img class='art' src='images/eggs-small.jpg' id='eggs'>
-      <p class="caption">Cats</p>
-      <img class='art' src='images/cats-small.jpg' id='cats'>
-      <p class="caption">Dead Fish</p>
-      <img class='art' src='images/dead-fish-small.jpg' id='dead-fish'>
-      <p class="caption">Clean Tables</p>
-      <img class='art' src='images/clean-tables-small.jpg' id='clean-tables'>
-      <p class="caption">Red Coat</p>
-      <img class='art' src='images/red-coat-small.jpg' id='red-coat'>
-      <p class="caption">Specimens</p>
-      <img class='art' src='images/specimens-small.jpg' id='specimens'>
-      <p class="caption">Ribbons</p>
-      <img class='art' src='images/ribbons-small.jpg' id='ribbons'>
-      <p class="caption">Bully</p>
-      <img class='art' src='images/bully-small.jpg' id='bully'>
-      <p class="caption">Pants</p>
-      <img class='art' src='images/pants-small.jpg' id='pants'>
-      <p class="caption">Red Light Green Light</p>
-      <img class='art' src='images/red-light-green-light-small.jpg' id='red-light-green-light'>
-      <p class="caption">Mustard</p>
-      <img class='art' src='images/mustard-small.jpg' id='mustard'>
+    <div id="center-column">
+      <div id="art-holder">
+        <p class="caption">Kiss kiss</p>
+        <div class="image-holder">
+          <div class="magnifier-thumb-wrapper">
+            <img class='art' src='images/kiss-kiss-small.jpg' id='kiss-kiss'>
+          </div>
+        </div>
+        <p class="caption">Dead Horse</p>
+        <div class="image-holder">
+          <div class="magnifier-thumb-wrapper">
+            <img class='art' src='images/dead-horse-small.jpg' id='dead-horse'>
+          </div>
+        </div>
+        <p class="caption">Eggs</p>
+        <div class="image-holder">
+          <div class="magnifier-thumb-wrapper">
+            <img class='art' src='images/eggs-small.jpg' id='eggs'>
+          </div>
+        </div>
+        <p class="caption">Cats</p>
+        <div class="image-holder">
+          <div class="magnifier-thumb-wrapper">
+            <img class='art' src='images/cats-small.jpg' id='cats'>
+          </div>
+        </div>
+        <p class="caption">Dead Fish</p>
+        <div class="image-holder">
+          <div class="magnifier-thumb-wrapper">
+            <img class='art' src='images/dead-fish-small.jpg' id='dead-fish'>
+          </div>
+        </div>
+        <p class="caption">Clean Tables</p>
+        <div class="image-holder">
+          <div class="magnifier-thumb-wrapper">
+            <img class='art' src='images/clean-tables-small.jpg' id='clean-tables'>
+          </div>
+        </div>
+        <p class="caption">Red Coat</p>
+        <div class="image-holder">
+          <div class="magnifier-thumb-wrapper">
+            <img class='art' src='images/red-coat-small.jpg' id='red-coat'>
+          </div>
+        </div>
+        <p class="caption">Specimens</p>
+        <div class="image-holder">
+          <div class="magnifier-thumb-wrapper">
+            <img class='art' src='images/specimens-small.jpg' id='specimens'>
+          </div>
+        </div>
+        <p class="caption">Ribbons</p>
+        <div class="image-holder">
+          <div class="magnifier-thumb-wrapper">
+            <img class='art' src='images/ribbons-small.jpg' id='ribbons'>
+          </div>
+        </div>
+        <p class="caption">Bully</p>
+        <div class="image-holder">
+          <div class="magnifier-thumb-wrapper">
+            <img class='art' src='images/bully-small.jpg' id='bully'>
+          </div>
+        </div>
+        <p class="caption">Pants</p>
+        <div class="image-holder">
+          <div class="magnifier-thumb-wrapper">
+            <img class='art' src='images/pants-small.jpg' id='pants'>
+          </div>
+        </div>
+        <p class="caption">Red Light Green Light</p>
+        <div class="image-holder">
+          <div class="magnifier-thumb-wrapper">
+            <img class='art' src='images/red-light-green-light-small.jpg' id='red-light-green-light'>
+          </div>
+        </div>
+        <p class="caption">Mustard</p>
+        <div class="image-holder">
+          <div class="magnifier-thumb-wrapper">
+            <img class='art' src='images/mustard-small.jpg' id='mustard'>
+          </div>
+        </div>
+      </div>
     </div>
-    <script>
-    </script>
+  <script type="text/javascript" src="Event.js"></script>
+  <script type="text/javascript" src="Magnifier.js"></script>
+  <script type="text/javascript">
+    var evt = new Event(),
+    m = new Magnifier(evt);
+    pics = document.getElementById("art-holder").getElementsByClassName("art");
+    for (i=0; i<pics.length; i++) {
+      console.log(pics[i])
+      m.attach({
+        thumb: '#' + pics[i].id,
+        /* large: pics[i].src, */
+        mode: 'inside',
+        zoom: 3
+        /* zoomable: true */
+      });
+    }
+  </script>
   </body>
 </html>

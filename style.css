@@ -1,0 +1,99 @@
+h1, h2 {
+  text-align: center;
+  margin: 0.2em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h1 {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1em;
+}
+
+#menu {
+  top: 0;
+  padding: 3vw;
+  font-family: "Times New Roman", Times, serif;
+  z-index: 1000;
+  color: black;
+  font-size: 3vw;
+  width: 25vw;
+}
+
+.image-holder {
+  position: relative;
+  max-width: 80%;
+  max-height: 95vh;
+  display: block;
+}
+
+.magnifier-thumb-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caption {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 0;
+  font-size: 1.2em;
+}
+
+#art-holder {
+  position: relative;
+  align: center;
+  /* height: 90vh; */
+  /* width: 68vw; */
+}
+
+.art {
+  max-width: 100%;
+  max-height: 95vh;
+  /* width: 68vw; */
+}
+
+.email {
+  /* color: #8a49bc; */
+  /* color: #b035b2; */
+  color: black;
+}
+
+.red {
+  color: red;
+  font-size: 2em;
+}
+
+/* unvisited link */
+a:link {
+    color: #2489a5;
+}
+
+/* visited link */
+a:visited {
+    color: #2489a5;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+body {
+  /* background-color: #eee; */
+  background-color: white;
+}
