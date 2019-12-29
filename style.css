@@ -51,6 +51,15 @@ p {
   font-size: 1.2em;
 }
 
+#menubar {
+  margin: auto;
+  text-align: center;
+}
+
+#menubar > h2 {
+  display: inline;
+}
+
 #art-holder {
   position: relative;
   align: center;

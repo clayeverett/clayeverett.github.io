@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> c l a y </title>
+    <link rel="stylesheet" type="text/css" href="/magnifier.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+  </head>
+  <body>
+    <h1><em>Clay</em></h1>
+    <div id="menubar">
+      
+        <h2><a href="/2019">2019</a></h2>
+      
+        <h2><a href="/2018">2018</a></h2>
+      
+        <h2><a href="/2017">2017</a></h2>
+      
+        <h2><a href="/drawings">drawings</a></h2>
+      
+      <h2><a href="/about">about / contact</a></h2>
+    </div>
+    <div id="center-column">
+      <div id="art-holder">
+        
+          
+            
+            <p class="caption">Clever</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2018/2018_Clever_oil-on-canvas_20x16in.jpg'
+                  id='Clever'
+                >
+              </div>
+            </div>
+          
+        
+          
+            
+            <p class="caption">Cottage</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2018/2018_Cottage_oil-on-panel_16x20in.jpg'
+                  id='Cottage'
+                >
+              </div>
+            </div>
+          
+        
+          
+            
+            <p class="caption">Cradle</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2018/2018_Cradle_oil-on-canvas_48x36in.JPG'
+                  id='Cradle'
+                >
+              </div>
+            </div>
+          
+        
+          
+            
+            <p class="caption">Kitten</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2018/2018_Kitten_oil-on-linen_36x30in.jpg'
+                  id='Kitten'
+                >
+              </div>
+            </div>
+          
+        
+          
+            
+            <p class="caption">Offer</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2018/2018_Offer_oil-on-canvas_52x36in.jpg'
+                  id='Offer'
+                >
+              </div>
+            </div>
+          
+        
+          
+            
+            <p class="caption">Red Rocket</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2018/2018_Red-Rocket_oil-on-canvas_48x60in.jpg'
+                  id='Red-Rocket'
+                >
+              </div>
+            </div>
+          
+        
+          
+            
+            <p class="caption">Skizzer</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2018/2018_Skizzer_oil-on-canvas_20x16in.jpg'
+                  id='Skizzer'
+                >
+              </div>
+            </div>
+          
+        
+          
+            
+            <p class="caption">The Dogs</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2018/2018_The-Dogs_oil-on-canvas_48x48in.JPG'
+                  id='The-Dogs'
+                >
+              </div>
+            </div>
+          
+        
+          
+        
+      </div>
+    </div>
+  <script type="text/javascript" src="Event.js"></script>
+  <script type="text/javascript" src="Magnifier.js"></script>
+  <script type="text/javascript">
+    var evt = new Event(),
+    m = new Magnifier(evt);
+    pics = document.getElementById("art-holder").getElementsByClassName("art");
+    for (i=0; i<pics.length; i++) {
+      console.log(pics[i])
+      m.attach({
+        thumb: '#' + pics[i].id,
+        /* large: pics[i].src, */
+        mode: 'inside',
+        zoom: 3
+        /* zoomable: true */
+      });
+    }
+  </script>
+  </body>
+</html>

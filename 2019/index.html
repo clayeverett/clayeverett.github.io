@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> c l a y </title>
+    <link rel="stylesheet" type="text/css" href="/magnifier.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+  </head>
+  <body>
+    <h1><em>Clay</em></h1>
+    <div id="menubar">
+      
+        <h2><a href="/2019">2019</a></h2>
+      
+        <h2><a href="/2018">2018</a></h2>
+      
+        <h2><a href="/2017">2017</a></h2>
+      
+        <h2><a href="/drawings">drawings</a></h2>
+      
+      <h2><a href="/about">about / contact</a></h2>
+    </div>
+    <div id="center-column">
+      <div id="art-holder">
+        
+          
+            
+            <p class="caption">Huh</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2019/2019_Huh_oil-on-plastic_15x12in.JPG'
+                  id='Huh'
+                >
+              </div>
+            </div>
+          
+        
+          
+            
+            <p class="caption">Nature Morte</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2019/2019_Nature-Morte_oil-on-canvas_68x26in.jpg'
+                  id='Nature-Morte'
+                >
+              </div>
+            </div>
+          
+        
+          
+            
+            <p class="caption">Sly</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2019/2019_Sly_oil-on-canvas_16x12in.jpg'
+                  id='Sly'
+                >
+              </div>
+            </div>
+          
+        
+          
+            
+            <p class="caption">Snack</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2019/2019_Snack_oil-on-canvas_8x6in.jpg'
+                  id='Snack'
+                >
+              </div>
+            </div>
+          
+        
+          
+            
+            <p class="caption">Snot Bubble</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2019/2019_Snot-Bubble_oil-on-canvas_62x50in.JPG'
+                  id='Snot-Bubble'
+                >
+              </div>
+            </div>
+          
+        
+          
+            
+            <p class="caption">Spider</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2019/2019_Spider_oil-on-canvas_70x70in.JPG'
+                  id='Spider'
+                >
+              </div>
+            </div>
+          
+        
+          
+            
+            <p class="caption">Sprite</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2019/2019_Sprite_oil-on-plastic_12x9in.JPG'
+                  id='Sprite'
+                >
+              </div>
+            </div>
+          
+        
+          
+            
+            <p class="caption">Time out</p>
+            <div class="image-holder">
+              <div class="magnifier-thumb-wrapper">
+                <img
+                  class='art'
+                  src='/2019/2019_Time-out_oil-on-canvas_54x28in.JPG'
+                  id='Time-out'
+                >
+              </div>
+            </div>
+          
+        
+          
+        
+      </div>
+    </div>
+  <script type="text/javascript" src="Event.js"></script>
+  <script type="text/javascript" src="Magnifier.js"></script>
+  <script type="text/javascript">
+    var evt = new Event(),
+    m = new Magnifier(evt);
+    pics = document.getElementById("art-holder").getElementsByClassName("art");
+    for (i=0; i<pics.length; i++) {
+      console.log(pics[i])
+      m.attach({
+        thumb: '#' + pics[i].id,
+        /* large: pics[i].src, */
+        mode: 'inside',
+        zoom: 3
+        /* zoomable: true */
+      });
+    }
+  </script>
+  </body>
+</html>
