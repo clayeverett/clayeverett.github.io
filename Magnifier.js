@@ -254,8 +254,12 @@ var Magnifier = function (evt, options) {
             if (curData.zoom >= curData.zoomMax) {
                 curData.zoom = curData.zoomMax;
             } else if (curData.zoom >= curData.zoomMin) {
-                curData.lensW = Math.round(curData.w / curData.zoom);
-                curData.lensH = Math.round(curData.h / curData.zoom);
+                var dim = 1.7*Math.max(
+                    curData.w / curData.zoom,
+                    curData.h / curData.zoom
+                );
+                curData.lensW = Math.round(dim);
+                curData.lensH = Math.round(dim);
 
                 if (curData.mode === 'inside') {
                     w = curData.w;
@@ -387,8 +391,12 @@ var Magnifier = function (evt, options) {
             thumbData.w = Math.round(thumbBounds.right - thumbData.x);
             thumbData.h = Math.round(thumbBounds.bottom - thumbData.y);
 
-            thumbData.lensW = Math.round(thumbData.w / thumbData.zoom);
-            thumbData.lensH = Math.round(thumbData.h / thumbData.zoom);
+            var dim = 1.7*Math.max(
+                thumbData.w / thumbData.zoom,
+                thumbData.h / thumbData.zoom
+            );
+            thumbData.lensW = Math.round(dim);
+            thumbData.lensH = Math.round(dim);
 
             if (thumbData.mode === 'inside') {
                 w = thumbData.w;
