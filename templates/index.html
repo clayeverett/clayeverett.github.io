@@ -18,23 +18,22 @@
       <div id="art-holder">
         {% for path in sorted(imdir.iterdir()) %}
           {% if path.name != 'index.html' %}
-            {% set id = path.name.split('_')[1] %}
-            <p class="caption">{{ id.replace('-', ' ') }}</p>
             <div class="image-holder">
               <div class="magnifier-thumb-wrapper">
                 <img
                   class='art'
                   src='/{{ path.relative_to(path.parent.parent) }}'
-                  id='{{ id }}'
+                  id='{{ path.name.split('_')[1] }}'
                 >
               </div>
+              <p class="caption">{{ title(path.name) }}</p>
             </div>
           {% endif %}
         {% endfor %}
       </div>
     </div>
-  <script type="text/javascript" src="Event.js"></script>
-  <script type="text/javascript" src="Magnifier.js"></script>
+  <script type="text/javascript" src="/Event.js"></script>
+  <script type="text/javascript" src="/Magnifier.js"></script>
   <script type="text/javascript">
     var evt = new Event(),
     m = new Magnifier(evt);
